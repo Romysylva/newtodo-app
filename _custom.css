@@ -99,7 +99,7 @@ nav h3 {
 .app .list__items #items .text__span {
   box-shadow: 0px 4px 10px grey;
   border-bottom: 2px solid #bdb407;
-  height: 40px;
+  height: max-content;
   display: flex;
   margin: 10px auto;
   justify-content: space-between;
