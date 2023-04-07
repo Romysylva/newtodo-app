@@ -1,0 +1,201 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+}
+
+body {
+    max-width: 1024px;
+    font-family:  Helvetica, sans-serif;
+    margin: auto;   
+    background-color:rgb(241, 243, 244)  ;
+
+}
+
+nav {
+    background-color: blue;
+    box-shadow: 0px 4px 10px grey;
+
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    h3 {
+    font-family:  Helvetica, sans-serif;
+    // font-family:  sans-serif;
+
+        text-transform: uppercase;
+        font-size: 20px;
+        color: black;
+        -webkit-text-stroke: 1px #ede0e0;
+    }
+}
+
+.app {
+    text-align: center;
+
+   
+    .list__items {
+
+
+        max-width: 700px;
+        margin: auto;
+        margin-top: 100px;
+        padding: 20px 0 ;
+        box-shadow: 0px 4px 10px grey;
+        input {
+            &::placeholder {
+                text-align: center;
+                text-transform: capitalize;
+            }
+        }
+        #mgs {
+            color: red;
+            padding-top: 10px;
+        }
+    
+        
+        .first__input {
+            width: 350px;
+            padding: 5px 0;
+            outline: none;
+            box-shadow: 0px 4px 10px grey;
+            border: 1px solid rgb(189, 180, 7);
+            height: 40px;
+
+            
+
+
+            &:focus {
+                padding-left: 10px;
+            }
+
+        
+            
+        }
+        button {
+            width: 120px;
+            cursor: pointer;
+            background-color: blue;
+            border: none;
+            color: #fff;
+            text-transform: capitalize;
+            padding: 5px 0;
+            box-shadow: 0px 4px 10px grey;
+            height: 40px;
+            font-weight: bolder;
+            font-size: 14px;
+            outline: none;
+
+
+
+        }
+        .input__2 {
+            margin: 30px 0;
+            box-shadow: 0px 4px 10px grey;
+            border: 1px solid rgb(189, 180, 7);
+            height: 40px;
+
+
+
+            width: 477px;
+
+            outline: none;
+            padding: 5px 0;
+            &:focus {
+                padding-left: 10px;
+            }
+          
+
+        }
+
+        #items {
+        
+            .text__span {
+                box-shadow: 0px 4px 10px grey;
+                border-bottom: 2px  solid rgb(189, 180, 7) ;
+                height: 40px;
+                display: flex;
+                margin: 10px auto;
+                justify-content: space-between;
+                max-width: 477px !important;
+                padding: 5px 0;
+                animation: display .5s ease-in-out;
+                -webkit-animation: display .5s ease-in-out;
+                background-color: #fff;
+                font-size: 18px;
+                .options {
+                    float: right !important;
+                }
+
+                i {
+                    float: right !important;
+                    color: #ba0202;
+                    padding: 5px 10px ;
+                    cursor: pointer;
+                }
+                .edit {
+                    margin-left: 10px;
+                }
+            }
+            .newInput {
+                width: 350px;
+                padding: 5px 0;
+                box-shadow: 0px 4px 10px grey;
+                outline: none !important;
+                border: none;
+                margin: 0 auto;
+                height: 40px  !important;
+                margin-right: 7px;
+                margin-bottom: 10px !important;
+                &:focus {
+                    color: #ba0202;
+                }
+
+                &:first-child {
+                    margin-top: 10px !important;
+                    margin-bottom: 0px !important;
+
+                }
+            }
+        }
+        .container {
+            .newBtn {
+                height: 40px  !important;
+
+
+            }
+        }
+    }
+}
+
+@media  screen and (max-width: 500px) {
+    .input__2 {
+        width: 350px !important;
+    }
+    .text__span {
+        width: 350px !important;
+
+    }
+    
+}
+
+@keyframes display {
+
+    from {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        
+    }
+    to {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        
+
+    }
+
+}
